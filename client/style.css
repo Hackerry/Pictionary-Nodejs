@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+}
+
+#join-form{
+    width: 100%;
+    height: 100%;
+    background-color: #b1afaf17;
+    display: block;
+    position: absolute;
+    text-align: center;
+    font:16px "Times New Roman";
+}
+
+#join-box {
+    width: 30%;
+    height: 100px;
+    display: block;
+    margin-top: 15%;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px #558060 solid;
+    background-color: lightgrey;
+}
+
+/* Join form style start */
+#join-username {
+    width: 80%;
+    margin: 5px;
+    padding: 2px;
+}
+
+#join-username-text {
+    margin: 5px;
+    font: 1em;
+}
+
+#join-button {
+    width: 80%;
+    height: 25px;
+}
+
+#join-msg {
+    margin: 5px;
+    color: #b54545;
+}
+/* Join form style end */
+
+/* Title style start */
+#title {
+    margin: 0 auto;
+    padding: 50px;
+    font: '30px Courier';
+    text-align: center;
+}
+#banner {
+    margin-top: -80px;
+    margin-left: 350px;
+}
+/* Title style end */
+
+/* Main div start*/
+#main-div {
+    margin: 0 auto;
+    width: 1000px;
+    height: 630px;
+}
+
+/* Player area style start */
+#player-area {
+    width: 300px;
+    height: 100%;
+    margin-right: 2px;
+    display: block;
+    text-align: center;
+    font: 20px "Courier";
+    font-weight: bold;
+    border: 1px solid black;
+    float: left;
+}
+#players {
+    margin-top: 10px;
+}
+.player-box {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.player-name {
+    width: 30%;
+    height: 20px;
+    display: inline-block;
+}
+.player-state {
+    width: 45%;
+    height: 20px;
+    margin-left: 10%;
+    font-weight: normal;
+    display: inline-block;
+}
+.right-answer {
+    background-color: green;
+}
+.wrong-answer {
+    background-color: red;
+}
+.default-hidden {
+    background-color: white;
+    color: white;
+}
+.default-shown {
+    background-color: white;
+    color: black;
+}
+.player-score {
+    width: 10%;
+    height: 20px;
+    display: inline-block;
+}
+/* Player area style end */
+
+/* Middle area style start */
+#middle-area {
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+
+/* Drawing board style start */
+#drawing-area {
+    margin: 0 auto;
+}
+#canvas {
+    width: 400px;
+    height: 400px;
+    display: block;
+    border: 2px dashed black;
+}
+/* Drawing board style end */
+
+/* Tool box style start */
+#tool-box {
+    width: 100%;
+    height: 75px;
+    border: 2px dashed black;
+}
+#color-box {
+    width: 80%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#color-box > span {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#color-box > span:hover {
+    cursor: hand;
+}
+#special-box {
+    width: 80px;
+    position: absolute;
+    text-align: center;
+    margin-left: 315px;
+    margin-top: -27px;
+}
+#special-box > div {
+    width: 75px;
+    height: 25px;
+    margin: 5px;
+    line-height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font: 20px 'Courier';
+}
+#special-box > div:hover {
+    cursor: hand;
+}
+#width-box {
+    width: 80%;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#width-box > span {
+    background-color: black;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+#width-box > span:hover {
+    cursor: hand;
+}
+/* Tool box style end */
+
+/* Self box style start */
+#self-box {
+    visibility: hidden;
+    width: 100%;
+    margin-top: 10px;
+    font: 20px 'Courier';
+    line-height: 30px;
+    text-align: center;
+}
+#self {
+    width: 60%;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    font: 20px 'Courier';
+}
+#ready {
+    width: 35%;
+    height: 30px;
+    display: inline-block;
+    font-weight: normal;
+    border: 1px solid black;
+    text-align: center;
+}
+#ready:hover {
+    cursor: hand;
+}
+.unselected {
+    background-color: white;
+}
+.selected {
+    background-color: green;
+}
+.ingame {
+    font-weight: bold;
+    background-color: white;
+}
+#prompt {
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    text-align: left;
+}
+#answer {
+    width: 90%;
+    padding: 2px;
+}
+#answer-button {
+    width: 90%;
+    margin-top: 5px;
+    height: 24px;
+}
+/* Self box style end*/
+
+/* Middle area style end */
+
+/* Chat area style start */
+#chat-area {
+    width: 220px;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 5px;
+    float: left;
+}
+#chat-text {
+    width: 100%;
+    height: 610px;
+    overflow-y: scroll;
+}
+#chat-input {
+    width: 140px;
+    height: 20px;
+    padding: 5px;
+}
+#chat-button {
+    width: 80px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 140px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #57af81;
+    color: white;
+}
+#chat-button:hover {
+    cursor: hand;
+}
+/* Chat area style end */
+/* Main div style end */
