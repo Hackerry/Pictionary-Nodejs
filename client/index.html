@@ -132,6 +132,9 @@
 
     // Update room
     socket.on('updatePlayers', function(res) {
+        // Test players exist
+        if(res.players == null) return;
+
         // Remove current player list first
         while(players.firstChild) {
             players.removeChild(players.firstChild);
