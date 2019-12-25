@@ -1,6 +1,6 @@
 # Pictionary-Nodejs
 A game of Pictionary implemented with Nodejs.<br>
-<b>Note: Sorry, this repository is currently under refactoring (bugs and others...). Please check back later.</b>
+<u>Note: Sorry, this repository is currently under refactoring (bugs and others...). Please check back later.</u>
 
 How to run:
 <b>npm install</b><br>
